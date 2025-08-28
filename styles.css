@@ -1,0 +1,283 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    color: #333;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 30px;
+    background: rgba(182, 175, 159, 0.15);
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(197, 188, 171, 0.3);
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    background: linear-gradient(to right, #c5bcab, #b6af9f, #c3baa9);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.subtitle {
+    font-size: 1.3rem;
+    color: #c5bcab;
+    margin-bottom: 20px;
+}
+
+.tabs {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 40px;
+}
+
+.tab {
+    padding: 18px 35px;
+    background: rgba(198, 189, 172, 0.2);
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    font-weight: 600;
+    font-size: 1.1rem;
+    border: 1px solid rgba(196, 187, 170, 0.4);
+    color: #c5bcab;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.tab:hover {
+    background: rgba(183, 176, 160, 0.3);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.tab.active {
+    background: rgba(181, 174, 158, 0.35);
+    border-color: #b6af9f;
+    box-shadow: 0 0 20px rgba(182, 175, 159, 0.4);
+    color: #fff;
+}
+
+.leaderboard {
+    background: rgba(180, 173, 157, 0.15);
+    border-radius: 20px;
+    overflow: hidden;
+    backdrop-filter: blur(12px);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(193, 184, 169, 0.3);
+    margin-bottom: 40px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead {
+    background: rgba(182, 175, 159, 0.25);
+}
+
+th {
+    padding: 22px;
+    text-align: left;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 0.95rem;
+    color: #c5bcab;
+    border-bottom: 2px solid rgba(196, 187, 170, 0.4);
+}
+
+th:nth-child(3) {
+    text-align: center;
+}
+
+th:nth-child(4) {
+    text-align: right;
+}
+
+tr {
+    border-bottom: 1px solid rgba(193, 184, 169, 0.2);
+    transition: all 0.3s ease;
+}
+
+tr:last-child {
+    border-bottom: none;
+}
+
+tr.highlight {
+    background: rgba(182, 175, 159, 0.2);
+    box-shadow: 0 0 25px rgba(182, 175, 159, 0.3);
+}
+
+td {
+    padding: 22px;
+    color: #c5bcab;
+}
+
+.team-name {
+    font-weight: 600;
+    font-size: 1.15rem;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    color: #e8e4db;
+}
+
+.logo {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #c5bcab, #b6af9f);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: #0f2027;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.rank {
+    font-size: 1.4rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #e8e4db;
+}
+
+.rank-change {
+    font-size: 0.95rem;
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+
+.up {
+    color: #4ecdc4;
+}
+
+.down {
+    color: #ff6b6b;
+}
+
+.score {
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #e8e4db;
+}
+
+.medal {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 35px;
+    margin-right: 12px;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.gold {
+    background: linear-gradient(135deg, #ffd700, #ffaa00);
+    color: #000;
+}
+
+.silver {
+    background: linear-gradient(135deg, #c0c0c0, #a0a0a0);
+    color: #000;
+}
+
+.bronze {
+    background: linear-gradient(135deg, #cd7f32, #a56a2b);
+    color: #000;
+}
+
+.trend {
+    text-align: right;
+    font-size: 1.3rem;
+}
+
+.trend i {
+    margin-left: 5px;
+}
+
+footer {
+    text-align: center;
+    padding: 25px;
+    font-size: 1.3rem;
+    color: #c5bcab;
+    background: rgba(182, 175, 159, 0.1);
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(196, 187, 170, 0.2);
+}
+
+.loading {
+    text-align: center;
+    padding: 40px;
+    font-size: 1.3rem;
+    color: #c5bcab;
+}
+
+.loading i {
+    margin-right: 10px;
+    animation: spin 1s infinite linear;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+@media (max-width: 768px) {
+    .tabs {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .tab {
+        width: 100%;
+        text-align: center;
+    }
+    
+    th, td {
+        padding: 18px 12px;
+    }
+    
+    .team-name {
+        font-size: 1rem;
+    }
+    
+    .rank {
+        font-size: 1.2rem;
+    }
+    
+    h1 {
+        font-size: 2.2rem;
+    }
+    
+    .subtitle {
+        font-size: 1.1rem;
+    }
+}

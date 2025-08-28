@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nirvaah 2025</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Nirvaah 2025 Leaderboard</h1>
+            <p class="subtitle">The War To Defend What Still Remains</p>
+        </header>
+
+        <div class="tabs">
+            <div class="tab active" data-vertical="management">Sustainable Management</div>
+            <div class="tab" data-vertical="marketing">Sustainable Marketing & PR</div>
+            <div class="tab" data-vertical="sustainable-pr">Sustainable Finance</div>
+        </div>
+
+        <div class="leaderboard">
+            <table>
+                <thead>
+                    <tr>
+                        <th width="10%">Rank</th>
+                        <th width="50%">Team</th>
+                        <th width="20%">Score</th>
+                        <th width="20%">Trend</th>
+                    </tr>
+                </thead>
+                <tbody id="leaderboard-body">
+                    <!-- Data will be populated by JavaScript -->
+                </tbody>
+            </table>
+        </div>
+
+        <footer>
+            <p>© 2025 Nirvaah By SDG</p>
+        </footer>
+    </div>
+
+    <!-- Firebase App (core Firebase SDK) -->
+    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app-compat.js"></script>
+    <!-- Firebase Database -->
+    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-database-compat.js"></script>
+
+    <script src="script.js"></script>
+</body>
+</html>
